@@ -1,0 +1,228 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+/* Homepage classes */
+.nav-bar {
+  width: auto;
+  height: 40px;
+  background: #000;
+  text-align: center;
+  line-height: 40px;
+  padding: 8px 16px;
+  box-sizing: content-box;
+}
+
+.nav-bar a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  padding: 14px 25px;
+}
+
+.nav-bar a:hover, a:active {
+  background-color: #3b3e42;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+}
+
+.nav-bar li {
+  float: left;
+  height: 48px;
+}
+
+.nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.activities {
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.modal {
+  display: none;
+}
+
+.row {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+}
+
+.element {
+  display: inline-block;
+  width: 24%;
+  margin-left: 0.5%;
+  margin-right: 0.01%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.caption {
+  padding: 8px 20px;
+  position: absolute;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+}
+
+.act-image {
+  width: 100%;
+  height: 100%;
+}
+
+.connect-with-us {
+  width: auto;
+  height: 40px;
+  background: #000;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  padding: 8px 16px;
+  box-sizing: content-box;
+}
+
+.connect-with-us a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  padding: 14px 25px;
+}
+
+.connect-with-us a:hover, a:active {
+  background-color: #3b3e42;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.signupbtn, .loginbtn {
+  width: 50px;
+  height: 25px;
+  background: #000;
+  text-align: center;
+  line-height: 3px;
+  padding: 8px 16px;
+  box-sizing: content-box;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.signupbtn:hover {
+  background-color: #3b3e42;
+}
+
+.agreebtn {
+  padding: 14px 20px;
+  background-color: #23B42D;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #F44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .agreebtn {
+  float: left;
+  width: 50%;
+  cursor: pointer;
+}
+
+.cancelbtn, .agreebtn: hover {
+  opacity: 1;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #7a8294;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-wrapper {
+  text-align: center;
+  padding-bottom: 2.5%;
+}
+
+.card {
+  display: inline-block;
+  width: 31%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  background-color: #f1f1f1;
+}
