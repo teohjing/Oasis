@@ -20,7 +20,7 @@ html, body {
 .nav-bar a:link, a:visited {
   text-decoration: none;
   color: white;
-  padding: 14px 25px;
+  padding: 1.5%;
 }
 
 .nav-bar a:hover, a:active {
@@ -42,6 +42,12 @@ html, body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.search{
+  text-align: center;
+  padding: 5%;
+  background-color: #d3d8e2;
 }
 
 .activities {
@@ -113,8 +119,9 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 .signupbtn, .loginbtn {
-  width: 50px;
-  height: 25px;
+  width: 10%;
+  max-width: 50px;
+  height: 20%;
   background: #000;
   text-align: center;
   line-height: 3px;
@@ -124,8 +131,14 @@ input[type=text]:focus, input[type=password]:focus {
   border-radius: 12px;
   cursor: pointer;
 }
+.signupbtn{
+  margin-left: 1%;
+}
+.loginbtn{
+  margin-right: 1%;
+}
 
-.signupbtn:hover {
+.signupbtn:hover, .loginbtn:hover {
   background-color: #3b3e42;
 }
 
@@ -238,11 +251,20 @@ hr {
   text-align: center;
   padding:2%;
 }
+
+.info a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.info a:hover, a:active {
+  background-color: #3b3e42;
+}
+
 .event{
   display: inline-block;
   width: 20%;
   padding: 1%;
-
 }
 
 .event-image{
