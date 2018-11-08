@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cityscope Banquet Hall</title>
+  <link rel="stylesheet" type="text/css" href="./layout.css" />
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="BanquetDetails" class="details" style="display:flex">
+    <div class="event">
+        <img class="event-image"  src="./images/ballroom.jpg" />
+        <div class="info" style="width:90%">
+          <h3><a href="./checkoutBanquet.html">Cityscope Banquet Hall</a></h3>
+          <p>
+            $800<br />
+            San Diego, California
+          </p>
+        </div>
+    </div>
+    <div class="event-info">
+      <span>
+        Enjoy Cityscope Banquet Hall in beautiful San Diego, California. <br />
+        Banquet Park offers a luxurious venue with nice things.
+        There's nice chairs
+        <br />
+        Max Capacity - 700
+        <br />
+        <br />
+        Please Contact Jim Halbert with any questions!
+        <br />
+        jimhalbert@ucsd.edu
+        (925) 283-2738
+      </span>
+    </div>
+  </div>
+
+  <div id="BanquetMoreDetails" >
+    <div id="BanquetReviews">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <button>10 Reviews</button>
+    </div>
+    <div id="catering" class="details-modal">
+      <span onclick="document.getElementById('catering').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content">
+        <div class="container">
+          <h1>Catering</h1>
+          <button  onclick="added()">Add to cart</button>
+          <script>
+            function added() {
+              confirm("Add this to cart?");
+            }
+          </script>
+        </div>
+      </form>
+    </div>
+    <div id="transportation" class="details-modal">
+      <span onclick="document.getElementById('transportation').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content">
+        <div class="container">
+          <h1>Transportation</h1>
+          <button  onclick="added()">Add to cart</button>
+
+        </div>
+      </form>
+    </div>
+    <div id="entertainment" class="details-modal">
+      <span onclick="document.getElementById('entertainment').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content">
+        <div class="container">
+          <h1>Entertainment</h1>
+          <button  onclick="added()">Add to cart</button>
+
+        </div>
+      </form>
+    </div>
+    <div id="planner" class="details-modal">
+      <span onclick="document.getElementById('planner').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content">
+        <div class="container">
+          <h1>Planner</h1>
+          <button  onclick="added()">Add to cart</button>
+
+        </div>
+      </form>
+    </div>
+    <div id="service-holder" class="service">
+      <h3>Add these additional services to your events. Click more for details</h3>
+
+      <div id="service-column1">
+        <button onclick="document.getElementById('catering').style.display='block'">Catering</button>
+        <br />
+        <button onclick="document.getElementById('transportation').style.display='block'">Transportation</button>
+      </div>
+      <div id="service-column2">
+        <button onclick="document.getElementById('entertainment').style.display='block'">Entertainment</button>
+        <br />
+        <button onclick="document.getElementById('planner').style.display='block'">Event Planner</button>
+      </div>
+
+      <div id="return-buttons" style="margin-left:20%">
+        <button onclick="window.location.href='search.html'">Return to Venues</button>
+        <button onclick="window.location.href='checkoutBanquet.html'">Proceed to checkout</button>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    // When the user clicks anywhere outside of the modal, close it
+
+    window.onclick = function(event) {
+      var modal = document.getElementById("planner");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+      var modal1 = document.getElementById("catering");
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      var modal2 = document.getElementById("entertainment");
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+      var modal3 = document.getElementById("transportation");
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

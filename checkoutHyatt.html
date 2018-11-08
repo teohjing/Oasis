@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" type="text/css" href="./layout.css" />
+</head>
+
+<body>
+  <div id="hyattCheckout" class="checkout" style="display:flex">
+    <div class="event">
+        <img class="event-image"  src="./images/Regency.jpg" />
+        <div class="info" style="width:90%">
+          <h3>Hyatt Regency</h3>
+          <p>
+            $1,000<br />
+            La Jolla, California
+          </p>
+        </div>
+    </div>
+    <div class="event-info">
+      <span>
+        Dates: 1/2/119
+        <br />
+        Time Frame: 2:00 - 4:00
+        <br />
+        $1,000 an Hour
+        <br />
+        Additiional Services - styles
+        <br />
+        Your total:
+        <br />
+        Venue: $2,000
+        <br />
+        Catering: $800
+        <br />
+        Total: $2,800
+
+      </span>
+    </div>
+    <div class="checkout-info">
+      <div>
+      <h3 style="margin:0px">Begin Checkout</h3>
+      </div>
+      <form action="purchased.html" method="get">
+        <ul>
+          <li>
+            <input type="text" placeholder="Email" size="25px" />
+          </li>
+          <li>
+            <input type="text" placeholder="Phone Number" />
+          </li>
+        </ul>
+        <div>
+          <h2 style="margin:0px">Payment</h2>
+        </div>
+        <ul>
+          <li>
+            <input type="text" placeholder="Card Number" />
+          </li>
+          <li>
+            <input type="datetime" placeholder="Expiration Date" />
+          </li>
+          <li>
+            <input type="text" placeholder="cvv" />
+          </li>
+
+        </ul>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </div>
+  <button onclick="window.location.href='search.html'">Go back</button>
+</body>
+</html>

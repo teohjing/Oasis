@@ -10,14 +10,14 @@
 <body>
   <!-- Nav Bar -->
   <div class="nav-bar">
-    <a href="./template.html"><b>Oasis</b></a>
+    <a href="./index.html"><b>Oasis</b></a>
     <a href="#help">Help</a>
     <a href="./favorites.html">Favorites</a>
     <a href="./host.html">List Your Space</a>
     <button onclick="document.getElementById('login').style.display='block'" class="loginbtn">Log in</button>
     <div id="login" class="modal">
       <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <form class="modal-content">
+      <form class="modal-content" action="/action_page.php">
         <div class="container">
           <h1>Login</h1>
           <p>Welcome Back</p>
@@ -65,7 +65,7 @@
 
           <div class="clearfix">
             <button type="button" onclick="document.getElementById('sign-up').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" onclick="window.location.href='./index.html'" class="agreebtn">Sign Up</button>
+            <button type="submit" onclick="window.location.href='./index.html'"class="agreebtn">Sign Up</button>
           </div>
         </div>
       </form>
@@ -81,61 +81,22 @@
     <div style="padding-left: 3.5%">
       <h1>Look For Spaces</h1>
     </div>
-    <div class="row" style="padding-top:2%">
+    <script id="activities-template" type="text/x-handlebars-template">
+      <a class="element" href="./filter.html">
+        <div class="caption">
+          {{caption}}
+        </div>
+        <img class="act-image" src="{{actImage}}" />
+      </a>
+    </script>
+    <div class="row" id="first-row" style="padding-top:2%">
 
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Party
-        </div>
-        <img class="act-image" src="./images/party.jpg" alt="Party" />
-      </a>
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Wedding
-        </div>
-        <img class="act-image" src="./images/wedding.jpg" alt="Wedding" />
-      </a>
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Corporate Event
-        </div>
-        <img class="act-image" src="./images/corp.jpg" alt="Corporate" />
-      </a>
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Meeting
-        </div>
-        <img class="act-image" src="./images/meeting.jpg" alt="Meeting" />
-      </a>
     </div>
-    <div class="row" style="padding-bottom:4%">
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Concert
-        </div>
-        <img class="act-image" src="./images/concert.jpg" alt="Concert" />
-      </a>
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Photoshoot
-        </div>
-        <img class="act-image" src="./images/photoshoot.jpg" alt="Photoshoot" />
-      </a>
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Reunion
-        </div>
-        <img class="act-image" src="./images/reunion.jpg" alt="Reunion" />
-      </a>
-      <a class="element" href="./filter.html">
-        <div class="caption">
-          Workshop
-        </div>
-        <img class="act-image" src="./images/workshop.jpg" alt="Workshop" />
-      </a>
+    <div class="row" id="second-row" style="padding-bottom:4%">
 
     </div>
   </div>
+
   <div id="help" style="padding-left: 3.5%">
     <h1>How it Works</h1>
   </div>
@@ -159,9 +120,10 @@
       </p>
     </div>
   </div>
-  <footer class="connect-with-us">
-
-  </footer>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/oasis.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v4.0.11.js"></script>
 </body>
 
 </html>
